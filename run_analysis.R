@@ -35,4 +35,5 @@ reducedSet <-entireSet[ , grepl( "mean|std" , names( entireSet ) ) ]
 View(reducedSet)
 #write the clean data file
 write.csv(reducedSet, file = "FinalSet.csv")
+write.table(reducedSet, 'tidy.txt', row.names=FALSE)
 
